@@ -1348,3 +1348,157 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2022-04-12 12:17:38.783 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
 2022-04-12 12:17:38.866 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
 2022-04-12 12:17:39.299 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:04:03.863 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:04:03.894 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:04:04.453 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodController': Unsatisfied dependency expressed through field 'goodService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodServiceImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodDao' defined in file [E:\Study Materials\Code\IDEA\spring_cloud_homework\provider-goods8001\target\classes\org\zhouruxuan\provider8002\dao\GoodDao.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: org.apache.ibatis.annotations.Select.databaseId()Ljava/lang/String;
+2022-04-12 14:15:33.781 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:15:33.812 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:15:34.542 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:15:34.618 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:15:35.029 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:17:02.701 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:17:02.741 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:17:03.887 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:17:03.972 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:17:04.391 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:20:17.645 [Thread-2] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649744417645, current=DOWN, previous=UP]
+2022-04-12 14:20:17.992 [Thread-2] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649744417992, current=DOWN, previous=UP]
+2022-04-12 14:20:21.525 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.zhouruxuan.provider8002]' package. Please check your configuration.
+2022-04-12 14:20:21.652 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:20:21.890 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.zhouruxuan.provider8002]' package. Please check your configuration.
+2022-04-12 14:20:22.026 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:20:22.233 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:20:22.332 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:20:22.537 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:20:22.651 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:23:37.915 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:23:37.951 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:23:38.744 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:23:38.866 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:23:39.414 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:26:20.624 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.zhouruxuan.provider8001]' package. Please check your configuration.
+2022-04-12 14:26:21.199 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:26:21.230 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:26:21.319 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodController': Unsatisfied dependency expressed through field 'goodService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodServiceImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.zhouruxuan.provider8001.dao.GoodDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-12 14:27:36.480 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.zhouruxuan.provider8001]' package. Please check your configuration.
+2022-04-12 14:27:37.117 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:27:37.150 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:27:37.252 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodController': Unsatisfied dependency expressed through field 'goodService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'goodServiceImpl': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.zhouruxuan.provider8001.dao.GoodDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-12 14:28:21.583 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:28:21.612 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:28:22.342 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:28:22.420 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:28:22.829 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:33:40.522 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:33:40.553 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:34:05.970 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:34:06.001 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:34:06.782 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:34:06.844 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:34:07.260 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:34:42.660 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:34:42.691 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:34:43.859 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:34:43.953 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:34:44.362 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:36:28.167 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:36:28.282 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:36:29.035 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:36:29.115 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:36:29.522 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:39:22.432 [SpringContextShutdownHook] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649745562432, current=DOWN, previous=UP]
+2022-04-12 14:39:31.195 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:39:31.227 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:39:32.046 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:39:32.125 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:39:32.519 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:47:13.021 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:47:13.062 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:47:13.063 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:47:13.896 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:47:14.002 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:47:14.318 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:47:14.357 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 14:47:14.482 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:47:15.505 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:47:15.583 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:47:16.017 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:50:18.884 [Thread-2] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746218884, current=DOWN, previous=UP]
+2022-04-12 14:50:23.028 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:50:23.529 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:50:23.577 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:50:23.941 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:53:02.565 [Thread-27] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746382565, current=DOWN, previous=UP]
+2022-04-12 14:53:07.025 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:53:07.509 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:53:07.556 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:53:07.967 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:55:38.496 [Thread-35] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746538496, current=DOWN, previous=UP]
+2022-04-12 14:55:42.642 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:55:43.116 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:55:43.168 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:55:43.560 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:56:25.445 [Thread-43] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746585445, current=DOWN, previous=UP]
+2022-04-12 14:56:29.447 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:56:29.866 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:56:29.911 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:56:30.245 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 14:59:18.183 [Thread-51] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746758183, current=DOWN, previous=UP]
+2022-04-12 14:59:22.160 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:59:22.575 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 14:59:22.619 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 14:59:22.945 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:00:41.328 [Thread-59] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746841328, current=DOWN, previous=UP]
+2022-04-12 15:00:45.317 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:00:45.680 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:00:45.718 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:00:46.027 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:01:53.344 [Thread-67] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746913344, current=DOWN, previous=UP]
+2022-04-12 15:01:57.333 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:01:57.705 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:01:57.743 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:01:58.061 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:02:06.377 [Thread-75] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649746926377, current=DOWN, previous=UP]
+2022-04-12 15:02:10.617 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:02:11.070 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:02:11.130 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:02:11.475 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:03:32.901 [Thread-83] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649747012901, current=DOWN, previous=UP]
+2022-04-12 15:03:37.109 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:03:37.605 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:03:37.669 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:03:38.024 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:04:42.214 [Thread-91] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649747082214, current=DOWN, previous=UP]
+2022-04-12 15:04:46.197 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:04:46.555 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:04:46.592 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:04:46.907 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:05:06.381 [Thread-99] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649747106381, current=DOWN, previous=UP]
+2022-04-12 15:05:10.426 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:05:10.877 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:05:10.913 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:05:11.256 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:09:36.967 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:09:37.014 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:09:37.015 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:09:37.932 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:09:38.039 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:09:38.483 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:11:50.638 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:11:50.674 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:11:50.675 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:11:51.611 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:11:51.722 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:11:52.222 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:14:23.011 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:14:23.048 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:14:23.049 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:14:23.801 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:14:23.897 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:14:24.333 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.
+2022-04-12 15:16:05.288 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:16:05.325 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:16:05.325 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-04-12 15:16:06.082 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-04-12 15:16:06.178 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2022-04-12 15:16:06.622 [restartedMain] WARN  o.s.cloud.netflix.core.CoreAutoConfiguration - This module is deprecated. It will be removed in the next major release. Please use spring-cloud-netflix-hystrix instead.

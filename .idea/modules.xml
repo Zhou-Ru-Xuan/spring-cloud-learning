@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer-goods80/consumer-goods80.iml" filepath="$PROJECT_DIR$/consumer-goods80/consumer-goods80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dashboard9001/dashboard9001.iml" filepath="$PROJECT_DIR$/dashboard9001/dashboard9001.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server7001/eureka-server7001.iml" filepath="$PROJECT_DIR$/eureka-server7001/eureka-server7001.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server7002/eureka-server7002.iml" filepath="$PROJECT_DIR$/eureka-server7002/eureka-server7002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway9527/gateway9527.iml" filepath="$PROJECT_DIR$/gateway9527/gateway9527.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider-goods8001/provider-goods8001.iml" filepath="$PROJECT_DIR$/provider-goods8001/provider-goods8001.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider-goods8002/provider-goods8002.iml" filepath="$PROJECT_DIR$/provider-goods8002/provider-goods8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_cloud_homework.iml" filepath="$PROJECT_DIR$/spring_cloud_homework.iml" />

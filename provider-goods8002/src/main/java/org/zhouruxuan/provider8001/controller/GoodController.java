@@ -33,7 +33,7 @@ public class GoodController {
     })
     public R getGood(@PathVariable("id") Long id) {
         Good good = goodService.getById(id);
-        return R.ok().data("good 8001", good);
+        return R.ok().data("good 8002", good);
     }
 
 

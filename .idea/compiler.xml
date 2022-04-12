@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-provider-goods8001" />
+        <module name="consumer-goods80" />
+        <module name="common" />
+        <module name="shop-consumer-goods80" />
+        <module name="eureka-server7001" />
+        <module name="eureka-server7002" />
+        <module name="provider-goods8001" />
+        <module name="shop-common" />
+        <module name="provider-goods8002" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="consumer-goods80" target="1.8" />
+      <module name="eureka-server7001" target="1.8" />
+      <module name="eureka-server7002" target="1.8" />
+      <module name="provider-goods8001" target="1.8" />
+      <module name="provider-goods8002" target="1.8" />
+      <module name="shop-common" target="1.8" />
+      <module name="shop-consumer-goods80" target="1.8" />
+      <module name="shop-provider-goods8001" target="1.8" />
+      <module name="shop-provider-goods8002" target="1.8" />
+      <module name="spring_cloud_homework" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

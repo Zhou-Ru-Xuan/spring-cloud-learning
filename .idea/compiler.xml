@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop-provider-goods8001" />
+        <module name="config3344" />
         <module name="consumer-goods80" />
         <module name="common" />
         <module name="gateway9527" />
@@ -22,6 +23,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
+      <module name="config3344" target="1.8" />
       <module name="consumer-goods80" target="1.8" />
       <module name="dashboard9001" target="1.8" />
       <module name="eureka-server7001" target="1.8" />

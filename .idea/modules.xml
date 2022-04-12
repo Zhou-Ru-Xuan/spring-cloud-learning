@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config3344/config3344.iml" filepath="$PROJECT_DIR$/config3344/config3344.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer-goods80/consumer-goods80.iml" filepath="$PROJECT_DIR$/consumer-goods80/consumer-goods80.iml" />
       <module fileurl="file://$PROJECT_DIR$/dashboard9001/dashboard9001.iml" filepath="$PROJECT_DIR$/dashboard9001/dashboard9001.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server7001/eureka-server7001.iml" filepath="$PROJECT_DIR$/eureka-server7001/eureka-server7001.iml" />

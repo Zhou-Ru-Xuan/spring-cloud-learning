@@ -19,7 +19,7 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-
+        <!--feign中有hystrix，在配置文件中设置打开就行，不用再额外引入-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.zhouruxuan.common.result.R;
 
 @Component
-@FeignClient(value = "PROVIDER-GOODS")
+@FeignClient(value = "PROVIDER-GOODS",fallback = GoodFallbackServiceImpl.class)
 public interface GoodFeignService
 {
     @GetMapping("good/provider/getGood/{id}")

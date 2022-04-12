@@ -23,7 +23,7 @@ public class GoodController {
 
     //根据用户id进行查询
     @GetMapping("getGood/{id}")
-    @HystrixCommand(fallbackMethod = "goodTimeOutFallbackMethod", commandProperties = {
+    @HystrixCommand(fallbackMethod = "getGoodTimeOutFallbackMethod", commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
     })
     public R getGood(@PathVariable("id") Long id) {

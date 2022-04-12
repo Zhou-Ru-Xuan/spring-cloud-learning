@@ -3421,3 +3421,111 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2022-04-12 15:16:08.133 [RMI TCP Connection(5)-118.202.10.134] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-04-12 15:16:08.134 [RMI TCP Connection(5)-118.202.10.134] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2022-04-12 15:16:08.139 [RMI TCP Connection(5)-118.202.10.134] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2022-04-12 15:34:41.982 [restartedMain] INFO  org.zhouruxuan.provider8001.ProviderMain8001 - The following profiles are active: dev
+2022-04-12 15:34:42.848 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=640414e6-bd8f-3b2f-8013-227cc8e5ed48
+2022-04-12 15:34:43.385 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2022-04-12 15:34:43.393 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2022-04-12 15:34:43.394 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-12 15:34:43.394 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-04-12 15:34:43.506 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-12 15:34:43.506 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1511 ms
+2022-04-12 15:34:43.584 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-12 15:34:43.589 [restartedMain] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@37cdab5e
+2022-04-12 15:34:43.771 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-04-12 15:34:43.882 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-04-12 15:34:44.484 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-12 15:34:44.528 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-12 15:34:44.539 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-12 15:34:44.602 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-12 15:34:45.125 [restartedMain] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-04-12 15:34:45.143 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-04-12 15:34:45.331 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022-04-12 15:34:45.331 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022-04-12 15:34:45.395 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022-04-12 15:34:45.395 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022-04-12 15:34:45.485 [restartedMain] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-04-12 15:34:45.574 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-04-12 15:34:45.575 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-04-12 15:34:45.575 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-04-12 15:34:45.575 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2022-04-12 15:34:45.575 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-04-12 15:34:45.575 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-04-12 15:34:45.575 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-04-12 15:34:45.694 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2022-04-12 15:34:45.696 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-04-12 15:34:45.697 [restartedMain] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-12 15:34:45.699 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1649748885698 with initial instances count: 0
+2022-04-12 15:34:45.701 [restartedMain] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application PROVIDER-GOODS with eureka with status UP
+2022-04-12 15:34:45.702 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649748885702, current=UP, previous=STARTING]
+2022-04-12 15:34:45.703 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PROVIDER-GOODS/LAPTOP-JJ8GA5R4:provider-goods:8001: registering service...
+2022-04-12 15:34:45.704 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2022-04-12 15:34:45.721 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2022-04-12 15:34:45.721 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8001
+2022-04-12 15:34:45.754 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PROVIDER-GOODS/LAPTOP-JJ8GA5R4:provider-goods:8001 - registration status: 204
+2022-04-12 15:34:45.841 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-12 15:34:45.852 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-12 15:34:45.871 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-12 15:34:45.926 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_1
+2022-04-12 15:34:45.928 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_2
+2022-04-12 15:34:45.948 [restartedMain] INFO  org.zhouruxuan.provider8001.ProviderMain8001 - Started ProviderMain8001 in 4.842 seconds (JVM running for 5.424)
+2022-04-12 15:34:46.518 [RMI TCP Connection(3)-118.202.10.134] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 15:34:46.518 [RMI TCP Connection(3)-118.202.10.134] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-12 15:34:46.524 [RMI TCP Connection(3)-118.202.10.134] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-04-12 15:35:15.710 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-04-12 15:35:15.711 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-04-12 15:35:15.712 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-04-12 15:35:15.712 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2022-04-12 15:35:15.712 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-04-12 15:35:15.712 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: false
+2022-04-12 15:35:15.713 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-04-12 15:35:15.757 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2022-04-12 15:36:36.523 [restartedMain] INFO  org.zhouruxuan.provider8001.ProviderMain8001 - The following profiles are active: dev
+2022-04-12 15:36:37.383 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=640414e6-bd8f-3b2f-8013-227cc8e5ed48
+2022-04-12 15:36:37.796 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2022-04-12 15:36:37.801 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2022-04-12 15:36:37.803 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-04-12 15:36:37.803 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-04-12 15:36:37.907 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-04-12 15:36:37.907 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1370 ms
+2022-04-12 15:36:37.976 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-12 15:36:37.981 [restartedMain] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6f55087
+2022-04-12 15:36:38.141 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-04-12 15:36:38.230 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-04-12 15:36:38.737 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-12 15:36:38.780 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-12 15:36:38.791 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-12 15:36:38.852 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-12 15:36:39.400 [restartedMain] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-04-12 15:36:39.419 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-04-12 15:36:39.618 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022-04-12 15:36:39.619 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022-04-12 15:36:39.685 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022-04-12 15:36:39.686 [restartedMain] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022-04-12 15:36:39.778 [restartedMain] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-04-12 15:36:39.869 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-04-12 15:36:39.870 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-04-12 15:36:39.870 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-04-12 15:36:39.870 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2022-04-12 15:36:39.870 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-04-12 15:36:39.870 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-04-12 15:36:39.870 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-04-12 15:36:39.963 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2022-04-12 15:36:39.965 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-04-12 15:36:39.967 [restartedMain] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-12 15:36:39.969 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1649748999968 with initial instances count: 2
+2022-04-12 15:36:39.972 [restartedMain] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application PROVIDER-GOODS with eureka with status UP
+2022-04-12 15:36:39.972 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1649748999972, current=UP, previous=STARTING]
+2022-04-12 15:36:39.973 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PROVIDER-GOODS/LAPTOP-JJ8GA5R4:provider-goods:8001: registering service...
+2022-04-12 15:36:39.973 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2022-04-12 15:36:39.992 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2022-04-12 15:36:39.993 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8001
+2022-04-12 15:36:40.001 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PROVIDER-GOODS/LAPTOP-JJ8GA5R4:provider-goods:8001 - registration status: 204
+2022-04-12 15:36:40.115 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-04-12 15:36:40.125 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-04-12 15:36:40.146 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-04-12 15:36:40.207 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_1
+2022-04-12 15:36:40.209 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: handleUsingGET_2
+2022-04-12 15:36:40.229 [restartedMain] INFO  org.zhouruxuan.provider8001.ProviderMain8001 - Started ProviderMain8001 in 4.549 seconds (JVM running for 5.11)
+2022-04-12 15:36:40.751 [RMI TCP Connection(3)-118.202.10.134] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 15:36:40.751 [RMI TCP Connection(3)-118.202.10.134] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-04-12 15:36:40.758 [RMI TCP Connection(3)-118.202.10.134] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms

@@ -13,7 +13,7 @@ import org.zhouruxuan.provider8001.service.GoodService;
 @RestController
 @RequestMapping("good/provider")
 @CrossOrigin
-@DefaultProperties(defaultFallback = "goodGlobalFallbackMethod")
+@DefaultProperties(defaultFallback = "goodGlobalFallbackMethod")//降级
 public class GoodController {
 
     @Autowired
@@ -24,7 +24,12 @@ public class GoodController {
     //根据用户id进行查询
     @GetMapping("getGood/{id}")
     @HystrixCommand(fallbackMethod = "getGoodTimeOutFallbackMethod", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000"),//超时降级
+            
+            @HystrixProperty(name = "circuitBreaker.enabled", value = "true"),// 是否开启断路器
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),// 请求次数
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), // 时间窗口期
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"),// 失败率达到多少后跳闸
     })
     public R getGood(@PathVariable("id") Long id) {
         Good good = goodService.getById(id);

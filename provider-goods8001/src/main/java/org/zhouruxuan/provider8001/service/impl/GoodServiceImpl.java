@@ -13,12 +13,26 @@ public class GoodServiceImpl implements GoodService {
     @Resource
     GoodDao dao;
 
+
     @Override
     public Good getById(Long id) {
         return dao.getById(id);
     }
 
+    @Override
+    public boolean deleteById(Long id) {
+        return dao.deleteById(id);
+    }
 
+    @Override
+    public boolean add(Good good) {
+        return dao.add(good);
+    }
+
+    @Override
+    public boolean updateById(Good good) {
+        return dao.updateById(good);
+    }
 
 
 }

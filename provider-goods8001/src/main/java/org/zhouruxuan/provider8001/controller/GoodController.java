@@ -21,11 +21,12 @@ public class GoodController {
     GoodService goodService;
 
 
+
     //根据用户id进行查询
     @GetMapping("getGood/{id}")
     @HystrixCommand(fallbackMethod = "getGoodTimeOutFallbackMethod", commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000"),//超时降级
-            
+
             @HystrixProperty(name = "circuitBreaker.enabled", value = "true"),// 是否开启断路器
             @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),// 请求次数
             @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), // 时间窗口期
@@ -34,6 +35,21 @@ public class GoodController {
     public R getGood(@PathVariable("id") Long id) {
         Good good = goodService.getById(id);
         return R.ok().data("good 8001", good);
+    }
+
+    @PostMapping("add")
+    public R add(@RequestBody Good good) {
+        return R.ok().data("add 8001", goodService.add(good));
+    }
+
+    @DeleteMapping("deleteGoodById/{id}")
+    public R deleteGoodById(@PathVariable("id") Long id) {
+        return R.ok().data("deleteGoodById 8001", goodService.deleteById(id));
+    }
+
+    @PostMapping("updateGoodById")
+    public R updateGoodById(@RequestBody Good good) {
+        return R.ok().data("updateGoodById 8001", goodService.updateById(good));
     }
 
 

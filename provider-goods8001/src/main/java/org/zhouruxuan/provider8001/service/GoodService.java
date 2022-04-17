@@ -8,5 +8,10 @@ public interface GoodService {
 
     Good getById(Long id);
 
+    boolean deleteById(Long id);
 
+
+    boolean add(Good good);
+
+    boolean updateById(Good good);
 }

@@ -1,6 +1,5 @@
 package org.zhouruxuan.common.entities;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,13 +7,11 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Good implements Serializable {
+public class Vender implements Serializable {
     private Long id;
-    private String goodName;
-    private Double price;
-    private String venderName;
+    private String name;
 }

@@ -33,7 +33,12 @@ public class VenderController {
     })
     public R getVender(@PathVariable("id") Long id) {
         Vender vender = venderService.getById(id);
-        return R.ok().data("vender 8002", vender);
+        return R.ok().data("vender 8001", vender);
+    }
+
+    @GetMapping("getVenderNameList")
+    public R getVenderNameList() {
+        return R.ok().data("venders", venderService.list());
     }
 
 

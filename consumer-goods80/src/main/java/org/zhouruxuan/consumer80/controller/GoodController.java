@@ -61,13 +61,13 @@ public class GoodController {
         return goodFeignService.getVenderNameList();
     }
 
-    //根据用户id进行查询
+
     @GetMapping("vue-admin-template/user/login")
     public R login() {
         return R.ok().data("username", "admin").data("password", "111111").data("token", "zhouruxuan");
     }
 
-    //根据用户id进行查询
+
     @GetMapping("vue-admin-template/user/info")
     public R info() {
         return R.ok().data("name", "软件1908-20195407-周汝轩").data("avatar", "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");

@@ -36,6 +36,11 @@ public class VenderController {
         return R.ok().data("vender 8001", vender);
     }
 
+    @GetMapping("getVenderNameList")
+    public R getVenderNameList() {
+        return R.ok().data("venders", venderService.list());
+    }
+
 
     public R getVenderTimeOutFallbackMethod(@PathVariable("id") Long id) {
         return R.error().data("info", "getVenderTimeOutFallbackMethod");

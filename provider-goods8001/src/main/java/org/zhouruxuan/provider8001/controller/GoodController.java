@@ -7,12 +7,16 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.zhouruxuan.common.entities.Good;
+import org.zhouruxuan.common.entities.vo.GoodQuery;
 import org.zhouruxuan.common.result.R;
 import org.zhouruxuan.provider8001.service.GoodService;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("good/provider")
@@ -37,7 +41,7 @@ public class GoodController {
     })
     public R getGood(@PathVariable("id") Long id) {
         Good good = goodService.getById(id);
-        return R.ok().data("good 8001", good);
+        return R.ok().data("good", good);
     }
 
     @PostMapping("add")
@@ -55,6 +59,56 @@ public class GoodController {
         return R.ok().data("updateGoodById 8001", goodService.updateById(good));
     }
 
+
+    @GetMapping("pageGood/{current}/{limit}")
+    public R pageListGood(@PathVariable long current,
+                             @PathVariable long limit) {
+        //创建page对象
+        Page<Good> pageGood = new Page<>(current, limit);
+
+        //调用方法实现分页
+        //调用方法时候，底层封装，把分页所有数据封装到pageGood对象里面
+        goodService.page(pageGood, null);
+
+        long total = pageGood.getTotal();//总记录数
+        List<Good> records = pageGood.getRecords(); //数据list集合
+
+        Map<String, Object> map = new HashMap();
+        map.put("total", total);
+        map.put("goods", records);
+        return R.ok().data(map);
+
+    }
+    
+    
+    // 条件查询带分页的方法
+    @PostMapping("pageGoodCondition/{current}/{limit}")
+    public R pageGoodCondition(@PathVariable long current, @PathVariable long limit,
+                                  @RequestBody(required = false) GoodQuery goodQuery) {
+        //创建page对象
+        Page<Good> pageGood = new Page<>(current, limit);
+
+        //构建条件
+        QueryWrapper<Good> wrapper = new QueryWrapper<>();
+        // 多条件组合查询
+        // mybatis学过 动态sql
+        String goodName = goodQuery.getGoodName();
+        String venderName = goodQuery.getVenderName();
+        //判断条件值是否为空，如果不为空拼接条件
+        if (!StringUtils.isEmpty(goodName)) {
+            wrapper.like("good_name", goodName);
+        }
+        if (!StringUtils.isEmpty(venderName)) {
+            wrapper.eq("vender_name", venderName);
+        }
+
+        //调用方法实现条件查询分页
+        goodService.page(pageGood, wrapper);
+
+        long total = pageGood.getTotal();//总记录数
+        List<Good> records = pageGood.getRecords(); //数据list集合
+        return R.ok().data("total", total).data("goods", records);
+    }
 
     // 条件查询带分页的方法
     @GetMapping("getPageGoodListCondition/{current}/{limit}/{name}/{price}/{venderName}")

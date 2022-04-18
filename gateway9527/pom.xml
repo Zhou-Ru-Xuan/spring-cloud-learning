@@ -22,10 +22,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.zhouruxuan</groupId>
-            <artifactId>common</artifactId>
-        </dependency>
+
         <!--一般基础配置类-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

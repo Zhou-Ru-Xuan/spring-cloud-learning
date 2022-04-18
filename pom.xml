@@ -39,6 +39,7 @@
         <springcloud.eureka.server.version>2.0.2.RELEASE</springcloud.eureka.server.version>
         <springcloud.eureka.client.version>2.0.2.RELEASE</springcloud.eureka.client.version>
         <common.version>0.0.1-SNAPSHOT</common.version>
+        <turbine.version>2.2.6.RELEASE</turbine.version>
     </properties>
 
     <dependencyManagement>
@@ -49,6 +50,13 @@
                 <groupId>org.zhouruxuan</groupId>
                 <artifactId>common</artifactId>
                 <version>${common.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-turbine -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
+                <version>${turbine.version}</version>
             </dependency>
 
 

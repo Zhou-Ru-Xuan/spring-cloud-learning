@@ -9,4 +9,10 @@ public class GoodFallbackServiceImpl implements GoodFeignService {
     public R getGood(Long id) {
         return R.error().data("info", "[consumer80]  Method : public R getGood(Long id) , fallback");
     }
+
+    @Override
+    public R getPageGoodListCondition(int current, int limit, String name, Double price, String venderName) {
+        return R.error();
+    }
+
 }

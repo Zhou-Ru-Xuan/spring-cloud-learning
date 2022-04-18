@@ -1,9 +1,6 @@
 package org.zhouruxuan.consumer80.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.zhouruxuan.common.result.R;
 import org.zhouruxuan.consumer80.service.GoodFeignService;
 
@@ -21,5 +18,12 @@ public class GoodController {
     public R getGood(@PathVariable("id") Long id) {
         return goodFeignService.getGood(id);
     }
+
+
+    @GetMapping("getPageGoodListCondition/{current}/{limit}/{name}/{price}/{venderName}")
+    public R getPageGoodListCondition(@PathVariable int current, @PathVariable int limit, @PathVariable String name, @PathVariable Double price, @PathVariable String venderName) {
+        return goodFeignService.getPageGoodListCondition(current, limit, name, price, venderName);
+    }
+
 
 }

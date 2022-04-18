@@ -1,5 +1,7 @@
 package org.zhouruxuan.provider8001.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
@@ -10,6 +12,8 @@ import org.zhouruxuan.common.entities.Good;
 import org.zhouruxuan.common.result.R;
 import org.zhouruxuan.provider8001.service.GoodService;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("good/provider")
 @CrossOrigin
@@ -19,7 +23,6 @@ public class GoodController {
     @Autowired
     @Qualifier("goodServiceImpl")
     GoodService goodService;
-
 
 
     //根据用户id进行查询
@@ -39,17 +42,41 @@ public class GoodController {
 
     @PostMapping("add")
     public R add(@RequestBody Good good) {
-        return R.ok().data("add 8001", goodService.add(good));
+        return R.ok().data("add 8001", goodService.save(good));
     }
 
     @DeleteMapping("deleteGoodById/{id}")
     public R deleteGoodById(@PathVariable("id") Long id) {
-        return R.ok().data("deleteGoodById 8001", goodService.deleteById(id));
+        return R.ok().data("deleteGoodById 8001", goodService.removeById(id));
     }
 
     @PostMapping("updateGoodById")
     public R updateGoodById(@RequestBody Good good) {
         return R.ok().data("updateGoodById 8001", goodService.updateById(good));
+    }
+
+
+    // 条件查询带分页的方法
+    @GetMapping("getPageGoodListCondition/{current}/{limit}/{name}/{price}/{venderName}")
+    public R getPageGoodListCondition(@PathVariable long current, @PathVariable long limit, @PathVariable String name, @PathVariable Double price, @PathVariable String venderName) {
+        Page<Good> pageGood = new Page<>(current, limit);
+
+        QueryWrapper<Good> wrapper = new QueryWrapper<>();
+
+        if (!name.equals("null")) {
+            wrapper.like("good_name", name);
+        }
+        if (price >= 0) {
+            wrapper.eq("price", price);
+        }
+        if (!venderName.equals("null")) {
+            wrapper.eq("vender_name", venderName);
+        }
+
+        //调用方法实现条件查询分页
+        goodService.page(pageGood, wrapper);
+        List<Good> records = pageGood.getRecords(); //数据list集合
+        return R.ok().data("goods", records);
     }
 
 

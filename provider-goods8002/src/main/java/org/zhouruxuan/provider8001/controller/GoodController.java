@@ -41,26 +41,30 @@ public class GoodController {
     })
     public R getGood(@PathVariable("id") Long id) {
         Good good = goodService.getById(id);
-        return R.ok().data("good", good);
+        return R.ok().data("good", good).data("info","get from 8002");
     }
 
     @PostMapping("add")
+    @HystrixCommand
     public R add(@RequestBody Good good) {
-        return R.ok().data("add 8001", goodService.save(good));
+        return R.ok().data("add 8002", goodService.save(good));
     }
 
     @DeleteMapping("deleteGoodById/{id}")
+    @HystrixCommand
     public R deleteGoodById(@PathVariable("id") Long id) {
-        return R.ok().data("deleteGoodById 8001", goodService.removeById(id));
+        return R.ok().data("deleteGoodById 8002", goodService.removeById(id));
     }
 
     @PostMapping("updateGoodById")
+    @HystrixCommand
     public R updateGoodById(@RequestBody Good good) {
-        return R.ok().data("updateGoodById 8001", goodService.updateById(good));
+        return R.ok().data("updateGoodById 8002", goodService.updateById(good));
     }
 
 
     @GetMapping("pageGood/{current}/{limit}")
+    @HystrixCommand
     public R pageListGood(@PathVariable long current,
                              @PathVariable long limit) {
         //创建page对象
@@ -70,7 +74,7 @@ public class GoodController {
         //调用方法时候，底层封装，把分页所有数据封装到pageGood对象里面
         goodService.page(pageGood, null);
 
-        long total = pageGood.getTotal();//总记录数
+        long total = goodService.count();//总记录数
         List<Good> records = pageGood.getRecords(); //数据list集合
 
         Map<String, Object> map = new HashMap();
@@ -83,6 +87,7 @@ public class GoodController {
     
     // 条件查询带分页的方法
     @PostMapping("pageGoodCondition/{current}/{limit}")
+    @HystrixCommand
     public R pageGoodCondition(@PathVariable long current, @PathVariable long limit,
                                   @RequestBody(required = false) GoodQuery goodQuery) {
         //创建page对象
@@ -99,19 +104,20 @@ public class GoodController {
             wrapper.like("good_name", goodName);
         }
         if (!StringUtils.isEmpty(venderName)) {
-            wrapper.eq("vender_name", venderName);
+            wrapper.like("vender_name", venderName);
         }
 
         //调用方法实现条件查询分页
         goodService.page(pageGood, wrapper);
 
-        long total = pageGood.getTotal();//总记录数
+        long total = goodService.count();//总记录数
         List<Good> records = pageGood.getRecords(); //数据list集合
         return R.ok().data("total", total).data("goods", records);
     }
 
     // 条件查询带分页的方法
     @GetMapping("getPageGoodListCondition/{current}/{limit}/{name}/{price}/{venderName}")
+    @HystrixCommand
     public R getPageGoodListCondition(@PathVariable long current, @PathVariable long limit, @PathVariable String name, @PathVariable Double price, @PathVariable String venderName) {
         Page<Good> pageGood = new Page<>(current, limit);
 
@@ -124,7 +130,7 @@ public class GoodController {
             wrapper.eq("price", price);
         }
         if (!venderName.equals("null")) {
-            wrapper.eq("vender_name", venderName);
+            wrapper.like("vender_name", venderName);
         }
 
         //调用方法实现条件查询分页

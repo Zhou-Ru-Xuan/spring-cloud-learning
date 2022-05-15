@@ -34,7 +34,7 @@ public class GoodFallbackServiceImpl implements GoodFeignService {
 
     @Override
     public R add(Good good) {
-        return null;
+        return R.error().data("info", "[consumer80]  Method :  public R add(Good good) , fallback");
     }
 
     @Override
